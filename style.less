@@ -1,15 +1,16 @@
-// set some default variables
 
-@serif: 'Georgia';
-@sans-serif: 'Helvetica', 'Arial';
+// demo styles
+@color: #607D8B;
+@color-highlight: #CFD8DC;
+@import 'lib/demo-base.less'; // https://gist.github.com/kjantzer/fed29d575814024326cd
 
-body {
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-}
 
-@import 'elements.less'; // http://lesselements.com/
-
+// See `src/varibles.less` for customization.
+// You'll need to make sure @font-dir is accurate for you project
 @import 'src/basic-buttons.less';
+
+
+header .btn {
+    background: #cfd8dc;
+    color: #607d8b;
+}
